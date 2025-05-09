@@ -23,6 +23,8 @@ brew 'svn' # Needed to install fonts
 brew 'imagemagick'
 brew 'yarn'
 brew 'node'
+brew 'tmux'
+brew 'nvim'
 
 # Apps
 cask '1password'
