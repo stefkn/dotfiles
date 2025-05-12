@@ -1,0 +1,34 @@
+[alias]
+
+# Get default branch name
+defaultbranch = "!f() { git symbolic-ref refs/remotes/origin/HEAD | cut -d/ -f4; }; f"
+
+# Delete merged branches
+cleanup = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
+# Fetch/pull only current branch
+# (saves on fetching hundreds of branches you don't care about)
+fetchthis = "!git fetch origin $(git rev-parse --abbrev-ref HEAD)"
+pullthis = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
+
+# Start afresh on default branch (after doing some cleanup)
+zero = "!git checkout $(git defaultbranch) && git pull --ff-only --prune && git cleanup;"
+
+# Commit changes into temporary WIP commit. Useful if you want to quickly 
+# switch to another branch to do something.
+wip = !git add --all && git commit --no-verify -m "wip: [skip ci]"
+
+# Reset last commit (often used after `git wip`)
+pop = reset head^
+
+# Show files changed on PR branch
+prfiles = "!f() { cd ${GIT_PREFIX:-./}; git diff --relative --name-only origin/$(git defaultbranch)...HEAD; }; f"
+
+# Show diff of PR (same as what Github will show)
+prdiff = "!f() { cd ${GIT_PREFIX:-./}; git diff --relative origin/$(git defaultbranch)...HEAD; }; f"
+
+# Search recent commits, and on selection, commit staged changes as a fixup to that commit 
+fixup = !git log -n 50 --pretty=format:'%h %s' --no-merges | grep -v fixup | fzf | cut -c -7 | xargs -I % -o git commit --fixup % $@
+
+# Search recent commits, and on selection, commit staged changes as a fixup to that commit and then immediately open an interactive rebase starting from the parent of the selected commit.
+fixup-squash = "!fzf_commit=$(git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7) && git commit --fixup $fzf_commit && git rebase -i --autosquash $fzf_commit^"
