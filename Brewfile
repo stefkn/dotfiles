@@ -44,6 +44,7 @@ cask 'visual-studio-code'
 cask 'pycharm'
 cask 'ghostty'
 cask 'superwhisper'
+cask 'raycast'
 
 # Quicklook
 cask 'qlmarkdown'
