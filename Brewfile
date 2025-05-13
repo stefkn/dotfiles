@@ -43,6 +43,7 @@ cask 'the-unarchiver'
 cask 'visual-studio-code'
 cask 'pycharm'
 cask 'ghostty'
+cask 'superwhisper'
 
 # Quicklook
 cask 'qlmarkdown'
