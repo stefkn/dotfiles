@@ -25,6 +25,7 @@ brew 'yarn'
 brew 'node'
 brew 'tmux'
 brew 'nvim'
+brew 'lazygit'
 
 # Apps
 cask '1password'
