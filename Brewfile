@@ -14,7 +14,6 @@ brew 'git'
 brew 'grep'
 brew 'httpie'
 brew 'jq' 
-brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config'
 brew 'svn' # Needed to install fonts
