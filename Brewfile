@@ -18,6 +18,7 @@ brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config'
 brew 'svn' # Needed to install fonts
+brew 'pgcli'
 
 # Development
 brew 'imagemagick'
