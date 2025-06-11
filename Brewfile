@@ -29,7 +29,7 @@ brew 'lazygit'
 
 # Apps
 cask '1password'
-brew '1password-cli'
+cask '1password-cli'
 cask 'figma'
 cask 'firefox'
 cask 'github'
