@@ -13,7 +13,7 @@ chill defaults for macOS
 3. Run the installation with:
 
     ```zsh
-    cd ~/.dotfiles && ./freshstart.sh
+    cd ~/.dotfiles && sudo ./freshstart.sh
     ```
 
 4. Restart your computer to finalize the process
