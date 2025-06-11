@@ -7,7 +7,7 @@ chill defaults for macOS
 2. Clone this repo to `~/.dotfiles` with:
 
     ```zsh
-    git clone --recursive git@github.com:stefkn/dotfiles.git ~/.dotfiles
+    git clone https://github.com/stefkn/dotfiles.git ~/.dotfiles
     ```
 
 3. Run the installation with:
