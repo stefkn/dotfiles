@@ -46,6 +46,7 @@ cask 'pycharm'
 cask 'ghostty'
 cask 'superwhisper'
 cask 'raycast'
+cask 'alacritty'
 
 # Quicklook
 cask 'qlmarkdown'
