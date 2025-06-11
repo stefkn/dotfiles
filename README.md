@@ -16,6 +16,8 @@ chill defaults for macOS
     cd ~/.dotfiles && sudo ./freshstart.sh
     ```
 
+   If you aren't able to run `freshstart` you may need to run `chmod a+x freshstart.sh` to make it executable
+
 4. Restart your computer to finalize the process
 
 Your Mac is now ready to use!
