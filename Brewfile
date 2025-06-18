@@ -3,6 +3,16 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
+# Fonts
+cask 'font-lato'
+cask 'font-open-sans'
+cask 'font-roboto'
+cask 'font-source-code-pro-for-powerline'
+cask 'font-source-code-pro'
+cask 'font-source-sans-pro'
+cask 'font-source-serif-pro'
+cask 'font-0xproto-nerd-font'
+
 # Binaries
 brew 'awscli'
 brew 'bash' # Latest Bash version
@@ -20,6 +30,10 @@ brew 'svn' # Needed to install fonts
 brew 'pgcli'
 brew 'zsh-syntax-highlighting'
 brew 'powerlevel10k'
+
+# Quicklook
+cask 'qlmarkdown'
+cask 'quicklook-json'
 
 # Development
 brew 'imagemagick'
@@ -47,18 +61,4 @@ cask 'ghostty'
 cask 'superwhisper'
 cask 'raycast'
 cask 'alacritty'
-
-# Quicklook
-cask 'qlmarkdown'
-cask 'quicklook-json'
-
-# Fonts
-cask 'font-lato'
-cask 'font-open-sans'
-cask 'font-roboto'
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
-cask 'font-3270-nerd-font'
 
