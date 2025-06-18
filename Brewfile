@@ -41,8 +41,6 @@ cask 'screen-studio'
 cask 'slack'
 cask 'tableplus'
 cask 'the-unarchiver'
-cask 'visual-studio-code'
-cask 'pycharm'
 cask 'ghostty'
 cask 'superwhisper'
 cask 'raycast'
@@ -61,5 +59,3 @@ cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
-# Mac App Store
-mas 'Numbers', id: 409203825
