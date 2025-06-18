@@ -40,6 +40,8 @@ ZSH_CUSTOM=$DOTFILES
 plugins=(git history-substring-search zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # User configuration
 
