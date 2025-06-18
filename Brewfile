@@ -18,6 +18,8 @@ brew 'mas' # Mac App Store manager
 brew 'pkg-config'
 brew 'svn' # Needed to install fonts
 brew 'pgcli'
+brew 'zsh-syntax-highlighting'
+brew 'powerlevel10k'
 
 # Development
 brew 'imagemagick'
