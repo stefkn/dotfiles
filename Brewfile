@@ -61,4 +61,7 @@ cask 'ghostty'
 cask 'superwhisper'
 cask 'raycast'
 cask 'alacritty'
+cask 'chatgpt'
+cask 'visual-studio-code'
+
 
