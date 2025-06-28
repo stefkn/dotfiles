@@ -13,10 +13,8 @@ chill defaults for macOS
 3. Run the installation with:
 
     ```zsh
-    cd ~/.dotfiles && sudo ./freshstart.sh
+    cd ~/.dotfiles && chmod a+x freshstart.sh && ./freshstart.sh
     ```
-
-   If you aren't able to run `freshstart` you may need to run `chmod a+x freshstart.sh` to make it executable
 
 4. Restart your computer to finalize the process
 
