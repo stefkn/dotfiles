@@ -57,6 +57,8 @@ cask 'alacritty'
 cask 'chatgpt'
 cask 'visual-studio-code'
 cask 'powerlevel10k'
+cask 'arc'
+
 
 
 
