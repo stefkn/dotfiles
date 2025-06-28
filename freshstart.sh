@@ -45,6 +45,16 @@ mkdir $HOME/projects
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
 
+# Create an Alacritty config file and config directory
+touch $HOME/.alacritty.toml
+mkdir ~/.config && mkdir ~/.config/alacritty
+
+# move the theme to the alacritty directory
+cp aura-theme.toml ~/.config/alacritty/aura-theme.toml
+
+# add the theme to the alacritty config
+echo "import = ["~/.config/alacritty/aura-theme.toml"]" >> $HOME/.alacritty.toml
+
 # Remove all apps from the dock and restart
 defaults write com.apple.dock persistent-apps -array; killall Dock
 
