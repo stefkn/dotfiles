@@ -53,7 +53,7 @@ mkdir ~/.config && mkdir ~/.config/alacritty
 cp aura-theme.toml ~/.config/alacritty/aura-theme.toml
 
 # add the theme to the alacritty config
-echo "[general]\nimport = ['~/.config/alacritty/aura-theme.toml']" >> $HOME/.alacritty.toml
+echo "[general]\nimport = ['~/.config/alacritty/aura-theme.toml']\n\n[window]\nopacity = 0.55\nblur = true" >> $HOME/.alacritty.toml
 
 # Remove all apps from the dock and restart
 defaults write com.apple.dock persistent-apps -array; killall Dock
