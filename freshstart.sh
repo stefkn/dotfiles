@@ -44,3 +44,8 @@ mkdir $HOME/projects
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
+
+# Remove all apps from the dock and restart
+defaults write com.apple.dock persistent-apps -array; killall Dock
+
+echo "Done, welcome to your new machine."
