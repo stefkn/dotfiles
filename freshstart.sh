@@ -58,4 +58,4 @@ echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/
 # Remove all apps from the dock and restart
 defaults write com.apple.dock persistent-apps -array; killall Dock
 
-echo "Done, welcome to your new machine."
+echo "Done, welcome to your new machine. Make sure to restart your terminal to configure p10k."
